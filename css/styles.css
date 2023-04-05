@@ -13,6 +13,7 @@
 /*  Reset */
 * {
   margin: 0;
+  padding: 0;
 }
 ul {
   list-style: none;
@@ -30,11 +31,85 @@ body {
   background-color: white;
   color: var(--color-text-dark);
 }
+/*
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+}*/
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 0px;
+
+  outline: 2px dashed #f44336;
+}
+
+.container-hdr {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0px;
+
+  outline: 2px dashed #f44336;
+}
+
 /* general classes/auxiliary classes */
 /*************************************
  *          header
  */
-.logo-fonts {
+
+.nav {
+  background-color: rgb(245, 193, 97);
+  /*width: 100%;*/
+  height: 80px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 93px;
+}
+
+.nav .logo-fonts {
+  margin-left: 15px;
+  border: 1px solid rgb(235, 177, 69);
+}
+
+.menu {
+  /*width: 100%;*/
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 46px;
+
+  /* padding: 0;*/
+}
+
+.menu .item {
+  /* margin-left: 46px;*/
+  border: 1px solid rgb(235, 177, 69);
+}
+
+.menu .contact {
+  margin-left: 325px;
+  border: 1px solid rgb(235, 177, 69);
+}
+
+.contact {
+  margin-left: 0px;
+  border: 1px solid rgb(235, 177, 69);
+}
+
+.flex {
+  /*width: 100%;*/
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+
+  /* padding: 0;*/
+}
+
+a[href="WebStudio"].logo-fonts {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -63,6 +138,10 @@ body {
 
 .address-color a:hover {
   color: var(--color-text-primary);
+}
+
+a[href="mailto:info@devstudio.com"] {
+  color: var(--color-text-secondary);
 }
 
 /* the rest of the classes in order from <header> to <footer> */
