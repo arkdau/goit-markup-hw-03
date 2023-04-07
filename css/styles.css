@@ -30,15 +30,16 @@ body {
   font-size: 16px;*/
   background-color: white;
   color: var(--color-text-dark);
+  box-sizing: border-box;
 }
-/*
-.container {
+
+.container-hdr {
   width: 1200px;
   margin: 0 auto;
   padding: 0 0px;
-}*/
+}
 
-.container {
+.container-page {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 0px;
@@ -46,12 +47,13 @@ body {
   outline: 2px dashed #f44336;
 }
 
-.container-hdr {
+.container-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 0px;
+  padding: 230px 200px 230px 200px;
 
   outline: 2px dashed #f44336;
+  background: var(--bgcolor-primary);
 }
 
 /* general classes/auxiliary classes */
@@ -172,13 +174,68 @@ h3 {
   text-align: center;
 }
 
-.bg {
-  background: var(--bgcolor-primary);
-}
-
 /*************************************
  *      figure - caption  
  */
+
+section h2 {
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+/* Section - 0 */
+.section-0-flex {
+  /* background-color: rgb(245, 193, 97); */
+  /*width: 100%;*/
+  /*height: 80px;*/
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+
+  outline: 2px dashed #f44336;
+}
+
+/* Section - 1 */
+.section-1-flex {
+  /* background-color: rgb(245, 193, 97); */
+  /*width: 100%;*/
+  /*height: 80px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+
+  outline: 2px dashed #f44336;
+}
+
+/* Section - 2 */
+.section-2-flex {
+  /* background-color: rgb(245, 193, 97); */
+  /*width: 100%;*/
+  /*height: 80px;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+
+  outline: 2px dashed #f44336;
+}
+
 .fig-capt-box {
   width: 270px;
   height: 368px;
@@ -201,13 +258,20 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  height: 75px;
 }
 
 .as-attr-hdr {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1428;
   text-align: left;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.section-0-flex li {
+  width: 270px;
 }
 
 .team-desc {
@@ -221,6 +285,7 @@ h3 {
   font-weight: 500;
   line-height: 1.1875;
   text-transform: capitalize;
+  margin-bottom: 10px;
 }
 
 .fig-caption-text {
@@ -243,7 +308,7 @@ h3 {
 /* btn - Zamów usługę    */
 .btn-order-svc {
   width: 200px;
-  height: 50px;
+  height: 57px;
   font-weight: 700;
   line-height: 1.875;
   align-items: center;
@@ -254,6 +319,8 @@ h3 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--color-text-primary);
+  margin: 35px auto 0px;
+  display: block;
 }
 
 /* portfolio btn - nawigacyjne */
@@ -286,6 +353,26 @@ h3 {
 /*************************************
  *    foooter  
  */
+
+.container-footer {
+  width: 1200px;
+  height: 192px;
+  margin: 0 0;
+  /* padding: 60 0 0; */
+  /* padding-top: 0px; */
+  padding-left: 15px;
+  padding-top: 60px;
+  /* background: var(--bgcolor-primary); */
+  display: block;
+}
+
+.bg-footer {
+  margin-top: 35px;
+  padding-top: 0px;
+  padding-left: 200px;
+  background: var(--bgcolor-primary);
+}
+
 .footer-font {
   font-family: "Roboto";
   font-style: normal;
@@ -293,6 +380,10 @@ h3 {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-font li {
+  margin-bottom: 9px;
 }
 
 .footer-font > li > a {
