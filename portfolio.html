@@ -32,57 +32,61 @@
     </head>
 
   <!-- body -->
-  <body class="container-page">
+  <body class="page-border">
     <!-- header  -->
-    <header class="container-hdr">
-      <nav class="nav">
-        <a
-          href="WebStudio"
-          class="logo-fonts"
-          style="color: var(--color-text-primary)"
-          >Web<span style="color: black">Studio</span></a
-        >
-        <ul class="menu-font menu">
-          <li class="item">
-            <a
-              href="./index.html"
-              class="link"
-              >Agencja</a
-            >
-          </li>
+<header class="page-header">
+      <div class="container">
+        <nav class="nav">
+          <a
+            href="WebStudio"
+            class="logo-fonts"
+            style="color: var(--color-text-primary)"
+            >Web<span style="color: black">Studio</span></a
+          >
+          <ul class="menu-font flex menu-gap">
+            <li class="item">
+              <a
+                href="./index.html"
+                class="link"
+                >Agencja</a
+              >
+            </li>
 
-          <li class="item">
-            <a
-              href="./portfolio.html"
-              class="link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="item">
-            <a
-              href="Kontakt"
-              class="link"
-              >Kontakt</a
-            >
-          </li>
-          <li class="contact">
-            <ul class="menu-font address-color flex">
-              <li>
-                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li>
-                <a href="tel:+48 111 111 111">+48 111 111 111</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+            <li class="item">
+              <a
+                href="./portfolio.html"
+                class="link"
+                >Portfolio</a
+              >
+            </li>
+            <li class="item">
+              <a
+                href="Kontakt"
+                class="link"
+                >Kontakt</a
+              >
+            </li>
+            <li class="contact">
+              <ul class="menu-font address-color flex contact-gap">
+                <li>
+                  <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li>
+                  <a href="tel:+48 111 111 111">+48 111 111 111</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!-- end header -->
+
+        <!-- end header -->
 
         <!-- Section 3 - portfolio -->
-        <section style="margin-top: 94px;">
-            <ul class="section-3-flex" style="margin-bottom: 34px;">
+        <section>
+      <div class="container section-3-box">
+            <ul class="flex section-3-gap">
                 <li>
                     <button
                         type="button"
@@ -127,7 +131,7 @@
             <!-- End -ul- buttons -->
       
             <!-- Images portfolio-->      
-            <ul class="image-port-flex" style="margin-bottom: 94px;">
+            <ul class="flex image-port-gap">
                 <li>
                   <figure class="fig-capt-box-1">
                     <img
@@ -260,14 +264,16 @@
                 </li>
             </ul>
             <!-- End -ul- images portfolio-->
+      </div>
         </section>
         <!-- End section 3 - Portfolio -->
     <!-- end main -->
 
+<!-- footer -->
     <footer class="bg-footer">
       <div
-        class="container-footer"
-        style="outline: 2px var(--style-outline) var(--color-outline-section);"
+        class=" container page-footer"
+        style="outline: 2px var(--style-outline) var(--color-outline-section)"
       >
         <a
           href="WebStudio"
@@ -290,7 +296,7 @@
         </address>
       </div>
     </footer>
-    <!-- end footer -->
+        <!-- end footer -->
   </body>
   <!-- body --> 
 </html>
