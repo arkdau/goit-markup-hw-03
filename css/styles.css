@@ -2,7 +2,7 @@
   /* color #fff44336 - transparent color: #f44336 */
   --color-outline-section: #f44336;
   /* style:  dashed / hidden */
-  --style-outline: hidden ;
+  --style-outline: hidden;
   --color-text-primary: #2196f3;
   --color-text-secondary: #757575;
   --color-text-light: #fff;
@@ -15,10 +15,21 @@
   --font-text-secondary: "Raleway", sans-serif;
 }
 /*  Reset */
-* {
+
+*,
+*::before,
+*::after {
+  /* modern-normalize set: box-sizing:  */
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+/* * { 
+  margin: 0;
+  padding: 0;
+ } */
+
 ul {
   list-style: none;
 }
