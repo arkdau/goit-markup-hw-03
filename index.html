@@ -36,38 +36,37 @@
     <!-- header  -->
     <header class="page-header">
       <div class="container">
-        <nav class="nav">
+        <nav class="flex nav-item">
           <a
             href="WebStudio"
             class="logo-fonts"
             style="color: var(--color-text-primary)"
             >Web<span style="color: black">Studio</span></a
           >
-          <ul class="menu-font flex menu-gap">
-            <li class="item">
+          <ul class="flex menu-item">
+            <li>
               <a
                 href="./index.html"
                 class="link"
                 >Agencja</a
               >
             </li>
-
-            <li class="item">
+            <li>
               <a
                 href="./portfolio.html"
                 class="link"
                 >Portfolio</a
               >
             </li>
-            <li class="item">
+            <li>
               <a
                 href="Kontakt"
                 class="link"
                 >Kontakt</a
               >
             </li>
-            <li class="contact">
-              <ul class="menu-font address-color flex contact-gap">
+            <li>
+              <ul class="flex contact">
                 <li>
                   <a href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
@@ -80,11 +79,12 @@
         </nav>
       </div>
     </header>
+
     <!-- end header -->
 
     <!-- main -->
     <main>
-      <section class="main-box">
+      <section class="section main-box">
         <div class="container">
           <!-- <div -->
           <!-- class="container-main" -->
@@ -110,33 +110,36 @@
       </section>
 
       <!-- Section 0 - Nasze atrybuty  -->
-      <section>
+      <section
+        class="section"
+        style="padding-bottom: 0px"
+      >
         <div class="container">
-          <ul class="flex section-0-gap">
+          <ul class="flex">
             <li>
-              <h3 class="as-attr-hdr">LOREM IPSUM</h3>
-              <p class="as-attr-text">
+              <h3 class="item-attr-hdr">LOREM IPSUM</h3>
+              <p class="item-attr-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h3 class="as-attr-hdr">LOREM IPSUM</h3>
-              <p class="as-attr-text">
+              <h3 class="item-attr-hdr">LOREM IPSUM</h3>
+              <p class="item-attr-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h3 class="as-attr-hdr">LOREM IPSUM</h3>
-              <p class="as-attr-text">
+              <h3 class="item-attr-hdr">LOREM IPSUM</h3>
+              <p class="item-attr-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
             </li>
             <li>
-              <h3 class="as-attr-hdr">LOREM IPSUM</h3>
-              <p class="as-attr-text">
+              <h3 class="item-attr-hdr">LOREM IPSUM</h3>
+              <p class="item-attr-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
                 sodales dui. Interdum et malesuada
               </p>
@@ -147,14 +150,14 @@
       <!-- end Section - 0 -->
 
       <!-- Section 1 - Czym się zajmujemy -->
-      <section>
+      <section class="section">
         <div class="container">
           <h2 style="outline: 2px var(--style-outline) var(--color-outline-section)">
             Czym się zajmujemy
           </h2>
           <ul
-            class="flex section-1-gap"
-            style="margin-bottom: 59px"
+            class="flex"
+            style="padding-top: 50px"
           >
             <li>
               <img
@@ -183,64 +186,67 @@
       <!-- end Section 1 - Czym się zajmujemy -->
 
       <!-- Section 2 - Nasz zaspół -->
-      <section style="background: #f5f4fa">
+      <section
+        class="section"
+        style="background: #f5f4fa"
+      >
         <div class="container">
           <h2 style="outline: 2px var(--style-outline) var(--color-outline-section)">
             Nasz zespół
           </h2>
           <ul
-            class="flex section-2-gap"
-            style="padding-bottom: 94px"
+            class="flex"
+            style="padding-top: 50px"
           >
             <li>
-              <figure class="fig-capt-box">
+              <figure class="card">
                 <img
                   src="./images/section2_1.jpg"
                   alt="John Doe - Product Designer"
                   height="260"
                 />
-                <figcaption style="margin-top: 30px">
-                  <h3 class="team-hdr">John Doe</h3>
-                  <p class="team-desc">Product Designer</p>
+                <figcaption class="card-desc">
+                  <h3 class="card-hdr">John Doe</h3>
+                  <p class="card-text">Product Designer</p>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="fig-capt-box">
+              <figure class="card">
                 <img
                   src="./images/section2_2.jpg"
                   alt="John Doe - Frontend Developer"
                   height="260"
                 />
-                <figcaption style="margin-top: 30px">
-                  <h3 class="team-hdr">John Doe</h3>
-                  <p class="team-desc">Frontend Developer</p>
+                <figcaption class="card-desc" >
+                  <h3 class="card-hdr">John Doe</h3>
+                  <p class="card-text">Frontend Developer</p>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="fig-capt-box">
+              <figure class="card">
                 <img
                   src="./images/section2_3.jpg"
                   alt="John Doe - Marketing"
                   height="260"
                 />
-                <figcaption style="margin-top: 30px">
-                  <h3 class="team-hdr">John Doe</h3>
-                  <p class="team-desc">Marketing</p>
+                <figcaption class="card-desc">
+                  <h3 class="card-hdr">John Doe</h3>
+                  <p class="card-text">Marketing</p>
                 </figcaption>
               </figure>
             </li>
             <li>
-              <figure class="fig-capt-box">
+              <figure class="card">
                 <img
                   src="./images/section2_4.jpg"
                   alt="John Doe - UI Designer"
                   height="260"
                 />
-                <figcaption style="margin-top: 30px">
-                  <h3 class="team-hdr">John Doe</h3>
-                  <p class="team-desc">UI Designer</p>
+                <figcaption class="card-desc">
+                  <h3 class="card-hdr">John Doe</h3>
+                  <p class="card-text">UI Designer</p>
                 </figcaption>
               </figure>
             </li>
@@ -252,9 +258,9 @@
     <!-- end main -->
 
     <!-- footer -->
-    <footer class="bg-footer">
+    <footer class="footer">
       <div
-        class=" container page-footer"
+        class="container"
         style="outline: 2px var(--style-outline) var(--color-outline-section)"
       >
         <a
@@ -265,7 +271,7 @@
           Web<span style="color: white">Studio</span>
         </a>
 
-        <address style="margin-top: 20px">
+        <address class="footer-address">
           <ul class="footer-font">
             <li><span style="color: white">m. Warszawa, Aleje Jerozolimskie 21</span></li>
             <li>
