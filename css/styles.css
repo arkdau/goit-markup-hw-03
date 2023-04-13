@@ -11,8 +11,8 @@
   --bgcolor-primary: #2f303a;
   --bgcolor-select: #2196f3;
 
-  --font-text-primary: "Roboto", sans-serif;
-  --font-text-secondary: "Raleway", sans-serif;
+  --font-text-primary: 'Roboto', sans-serif;
+  --font-text-secondary: 'Raleway', sans-serif;
 }
 /*  Reset */
 
@@ -311,11 +311,7 @@ figure .card-1 {
  */
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer {
+  padding: 60px 0;
   background: var(--bgcolor-primary);
 }
 
@@ -330,7 +326,7 @@ figure .card-1 {
 }
 
 .footer-font {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
