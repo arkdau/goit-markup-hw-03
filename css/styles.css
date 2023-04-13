@@ -2,7 +2,7 @@
   /* color #fff44336 - transparent color: #f44336 */
   --color-outline-section: #f44336;
   /* style: dashed / hidden */
-  --style-outline: hidden ;
+  --style-outline: dashed;
   --color-text-primary: #2196f3;
   --color-text-secondary: #757575;
   --color-text-light: #fff;
@@ -66,6 +66,10 @@ body {
   justify-content: center;
 }
 
+.item-bar {
+  justify-content: space-between;
+}
+
 .wrap {
   flex-wrap: wrap;
   padding: 50px 0px 0px 0px;
@@ -111,18 +115,24 @@ body {
 }
 
 .contact {
-  /* gap: 50px; */
   margin-left: 325px;
 }
 
-a[href="WebStudio"].logo-fonts {
-  font-family: "Raleway";
+.logo-fonts {
+  font-family: var(--font-text-secondary);
+  /* font-family: "Raleway"; */
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
+  color: var(--color-text-primary);
 }
 
+.studio-color {
+  color: #000;
+}
+
+.menu-item a,
 .contact a {
   font-weight: 500;
   font-size: 14px;
@@ -175,7 +185,7 @@ h3 {
 }
 
 .main-box {
-  padding: 230px 200px 230px 200px;
+  padding: 200px 200px 200px 200px;
   outline: 2px var(--style-outline) var(--color-outline-section);
   background: var(--bgcolor-primary);
 }
@@ -276,26 +286,41 @@ h3 {
 /* btn - Zamów usługę    */
 .btn-order-svc {
   width: 200px;
-  height: 57px;
-  font-weight: 700;
-  line-height: 1.875;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--color-text-light);
-  background: var(--color-text-primary);
+  height: 50px;
+  /* font-weight: 700; */
+  /* line-height: 1.875; */
+  /* align-items: center; */
+  /* text-align: center; */
+  /* letter-spacing: 0.06em; */
+  /* color: var(--color-text-light); */
+  /* background: var(--color-text-primary); */
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  /* border-radius: 4px; */
+  /* border: 0 0 0 0; */
+  /* border-color: var(--color-text-primary); */
+  /* margin: 35px auto 0px; */
+  /* display: block; */
+
+  background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border-color: var(--color-text-primary);
-  margin: 35px auto 0px;
+  border: none;
   display: block;
+  font-family: var(--font-text-primary);
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  margin: 30px auto 0px;
 }
 
 /* portfolio btn - nawigacyjne */
 .btn-nav-font {
   font-family: var(--font-text-primary);
   font-weight: 500;
-  line-height: 1.625;
+  font-size: 16px;
+  line-height: 26px;
+  /* line-height: 1.625; */
   text-align: center;
   border: none;
   letter-spacing: 0.03em;
@@ -347,11 +372,11 @@ h3 {
 }
 
 .footer-font > li > a {
-  text-decoration: underline;
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-font > li > a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-text-primary);
 }
