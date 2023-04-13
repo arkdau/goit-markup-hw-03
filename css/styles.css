@@ -14,7 +14,10 @@
   --font-text-primary: 'Roboto', sans-serif;
   --font-text-secondary: 'Raleway', sans-serif;
 }
-/*  Reset */
+
+/*************************************
+ *         Reset 
+ */
 
 *,
 *::before,
